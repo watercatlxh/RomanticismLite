@@ -19,35 +19,7 @@
  $this->need('config/header.php');
  ?>
 
-<?php /*加载动画*/ if (!empty($this->options->AKAROMfucset) && in_array('AKAROMindexloading', $this->options->AKAROMfucset)): ?>
-<div class="loadingbg blur" id="loading">
-  <div id="loading_bg">
-    <div class="loader">
-      <div class="loader-box">
-        <noscript>
-          <b>无法加载网页：</b>需要 Javascript
-        </noscript>
-        <div style="margin-top:0px;">
-          <div class="loadingtx loading-text">
-            <span>内</span>
-            <span>容</span>
-            <span>正</span>
-            <span>在</span>
-            <span>载</span>
-            <span>入</span>
-          </div>
-        </div>
-        <br>
-        <span class="akarom-alter-button-valign">
-          <span class="akarom-alter-button blur yuan mdui-center" style="margin-top:15px;opacity:0;filter:blur(10px);transition:all .3s ease;font-size:15px;" id="cancelLoadingBtn">
-            在后台加载
-          </span>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-<?php endif; ?>
+
 
 
 <!--首页主题图-->
@@ -94,7 +66,23 @@
 <!--内容开始-->
 <div class="indexlistbox mdui-container">
 
-<div class="mdui-shadow-0 mdui-col-md-8 mdui-col-offset-md-2 mdui-card-primary toup">
+<div class="mdui-row">
+<div class="mdui-col-md-3 mdui-hidden-sm-down toup">
+    <div class="mdui-card mdui-shadow-0 blur yuan" style="margin-bottom: 20px;">
+        <div class="mdui-card-media">
+            <img src="<?php if(empty($this->options->AKAROMlogoUrl)): ?><?php $this->options->themeUrl('config/style/img/default/user.jpg'); ?><?php else: ?><?php $this->options->AKAROMlogoUrl(); ?><?php endif; ?>" style="border-radius: 15px 15px 0 0;">
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title" style="font-size: 20px;"><?php $this->options->title(); ?></div>
+                </div>
+            </div>
+        </div>
+        <div class="mdui-card-content">
+            <p><?php $this->options->description(); ?></p>
+        </div>
+    </div>
+</div>
+<div class="mdui-col-md-9 mdui-col-sm-12 mdui-card-primary toup">
 
 <?php if (empty($this->archiveTitle) && !empty($this->options->AKAROMinfobox)): ?><!--通知容器-->
 <div class="indexinfobox blur yuan mdui-card mdui-center mdui-text-center mdui-shadow-0">
@@ -275,6 +263,7 @@ data-bg="
 
 <?php endif; ?>
 <!--内容结束-->
+</div>
 </div>
 <!--主布局容器结束-->
 </div>

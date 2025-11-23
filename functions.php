@@ -154,6 +154,19 @@ function themeConfig($form) {  //后台设置界面
     );
     $form->addInput($AKAROMfucset->multiMode());
 
+    // 评论区开关
+    $AKAROMcommentSwitch = new Typecho_Widget_Helper_Form_Element_Radio(
+        'AKAROMcommentSwitch',
+        array(
+            '0' => _t('开启评论区'),
+            '1' => _t('关闭评论区')
+        ),
+        '0',
+        _t('评论区开关'),
+        _t('选择是否开启评论区，关闭后将完全不显示评论模块。')
+    );
+    $form->addInput($AKAROMcommentSwitch);
+
     // 评论区验证码
     $AKAROMfucsetcaptcha = new Typecho_Widget_Helper_Form_Element_Checkbox(
         'AKAROMfucsetcaptcha', 

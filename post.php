@@ -139,7 +139,9 @@ echo $content;
 
 
 </div>
+<?php if ($this->options->AKAROMcommentSwitch != '1'): ?>
 <?php $this->need('config/comments.php'); ?>
+<?php endif; ?>
 <br>
 </div>
 </div><!--内容结束-->
