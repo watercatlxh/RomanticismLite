@@ -43,7 +43,7 @@ error_reporting(0);
             'search'    =>  _t('包含关键字 %s 的文章'),
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
-        ), '', ' - '); ?><?php $this->options->title(); ?></title>
+        ), '', ' - '); ?><?php if($this->options->AKAROMsiteTitle): $this->options->AKAROMsiteTitle(); else: $this->options->title(); endif; ?></title>
 
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('config/mdui/css/mdui.min.css'); ?>">
@@ -82,7 +82,7 @@ error_reporting(0);
     <div class="mdui-toolbar">
       <a class="mdui-hidden-xs-down"></a>
       <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#mainsidebar', overlay: true}"><i class="mdui-icon material-icons">menu</i></button>
-      <a class="mdui-typo-title chameleon" href="<?php $this->options ->siteUrl(); ?>"><b><?php $this->options->title(); ?></b></a>
+      <a class="mdui-typo-title chameleon" href="<?php $this->options ->siteUrl(); ?>"><b><?php if($this->options->AKAROMsiteTitle): $this->options->AKAROMsiteTitle(); else: $this->options->title(); endif; ?></b></a>
       <div class="mdui-toolbar-spacer"></div>
       <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}"><i class="mdui-icon material-icons">search</i></button>
       <button type="button" class="mdui-btn mdui-btn-icon" id="switch-theme"> <i class="mdui-icon material-icons">brightness_6</i></button>
