@@ -186,6 +186,19 @@ function themeConfig($form) {  //后台设置界面
 
     $AKAROMcustomJs = new Typecho_Widget_Helper_Form_Element_Textarea('AKAROMcustomJs', NULL, NULL, _t('自定义 JS 代码（页脚）'), _t('可以在此处添加访客统计等 JavaScript 代码'));
     $form->addInput($AKAROMcustomJs);
+
+    // 一言开关
+    $AKAROMhitokoto = new Typecho_Widget_Helper_Form_Element_Radio(
+        'AKAROMhitokoto',
+        array(
+            '0' => _t('开启一言'),
+            '1' => _t('关闭一言')
+        ),
+        '0',
+        _t('页脚一言'),
+        _t('选择是否在页脚显示一言。')
+    );
+    $form->addInput($AKAROMhitokoto);
 }
 
 function themeFields($layout) { //文章自定义字段功能

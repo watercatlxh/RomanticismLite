@@ -15,6 +15,19 @@
 
 <div class="mdui-shadow-0 mdui-text-center mdui-card toup">
 <br>
+    <?php if ($this->options->AKAROMhitokoto != '1'): ?>
+      <span id="hitokoto" class="title" style="font-weight:bold;"></span>
+      <script>
+        fetch('https://v1.hitokoto.cn')
+          .then(response => response.json())
+          .then(data => {
+            const hitokoto = document.getElementById('hitokoto');
+            hitokoto.innerText = data.hitokoto + " —— " + data.from;
+          })
+          .catch(console.error);
+      </script>
+      <br>
+    <?php endif; ?>
 
       <br>
       <span class="title">

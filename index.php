@@ -23,7 +23,7 @@
 
 
 <!--首页主题图-->
-<div class="mdui-shadow-0 indeximgcard mdui-card indeximg" id="indeximg" style="background-image: url('<?php if(empty($this->options->AKAROMindeximg)): ?><?php $this->options->themeUrl('config/style/img/default/indeximg.webp'); ?><?php else: ?><?php $this->options->AKAROMindeximg(); ?><?php endif; ?>');">
+<div class="mdui-shadow-0 indeximgcard mdui-card indeximg" id="indeximg" style="background-image: url('<?php if(empty($this->options->AKAROMindeximg)): ?><?php $this->options->themeUrl('config/style/img/default/XueGaoLLC.webp'); ?><?php else: ?><?php $this->options->AKAROMindeximg(); ?><?php endif; ?>');">
 <div class="mdui-card-media-covered indeximgcard mdui-valign ">
       <div class="mdui-center mdui-card-primary easysee">
       <h1 class="mdui-typo-display-1 titlegap">
