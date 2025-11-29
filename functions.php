@@ -119,7 +119,7 @@ function themeConfig($form) {  //后台设置界面
     $AKAROMsiteTitle = new Typecho_Widget_Helper_Form_Element_Text('AKAROMsiteTitle', NULL, NULL, _t('设置站点标题'), _t('独立于 Typecho 设置，用于网页标题和资料卡片。留空则使用 Typecho 默认设置。'));
     $form->addInput($AKAROMsiteTitle);
 
-    $AKAROMsiteDesc = new Typecho_Widget_Helper_Form_Element_Text('AKAROMsiteDesc', NULL, NULL, _t('设置个性签名'), _t('独立于 Typecho 设置，显示在资料卡片。留空则使用 Typecho 默认描述。'));
+    $AKAROMsiteDesc = new Typecho_Widget_Helper_Form_Element_Textarea('AKAROMsiteDesc', NULL, NULL, _t('设置个性签名'), _t('独立于 Typecho 设置，显示在资料卡片。留空则使用 Typecho 默认描述。'));
     $form->addInput($AKAROMsiteDesc);
 
     $AKAROMindeximg = new Typecho_Widget_Helper_Form_Element_Text('AKAROMindeximg', NULL, NULL, _t('设置首页主题图'), _t('在这里填入一个图片 url 地址。'));

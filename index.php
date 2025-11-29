@@ -74,7 +74,7 @@
             <div class="mdui-card-primary-title" style="font-size: 20px; margin-top: 10px;"><?php if($this->options->AKAROMsiteTitle): $this->options->AKAROMsiteTitle(); else: $this->options->title(); endif; ?></div>
         </div>
         <div class="mdui-card-content mdui-text-center" style="padding-top: 0;">
-            <p><?php if($this->options->AKAROMsiteDesc): $this->options->AKAROMsiteDesc(); else: $this->options->description(); endif; ?></p>
+            <p style="white-space: pre-wrap;"><?php if($this->options->AKAROMsiteDesc): $this->options->AKAROMsiteDesc(); else: $this->options->description(); endif; ?></p>
         </div>
     </div>
 </div>
