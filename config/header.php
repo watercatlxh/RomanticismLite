@@ -34,7 +34,7 @@ error_reporting(0);
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 
-    <link href="<?php $this->options->AKAROMsign(); ?>" rel="icon" type="image/x-icon"><!--图标-->
+    <link href="<?php if($this->options->AKAROMsign): $this->options->AKAROMsign(); else: $this->options->themeUrl('config/style/img/default/favicon.ico'); endif; ?>" rel="icon" type="image/x-icon"><!--图标-->
 
     <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;900&amp;display=swap" rel="stylesheet">
 
