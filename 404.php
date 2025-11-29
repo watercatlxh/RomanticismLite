@@ -19,7 +19,7 @@
     <div class="mdui-card-primary mdui-valign show notfound-box">
         <div class="mdui-card-primary mdui-center">
 	       <br><br><br><br><br><br><br><br><br><br>
-            <span>404</span><h1>这里是空荡的原野...</h1>
+            <span>404</span><h1>Where could I find u..</h1>
             <br>
       
 	       </h1>

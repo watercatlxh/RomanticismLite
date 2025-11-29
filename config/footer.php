@@ -29,7 +29,8 @@
         <?php endif;?>
          <br>
          <!-- 已经弄得很不显眼了，请不要删除以下信息 -->
-      <small style="opacity: .2;">Theme <b><a class="chameleon underline"href="https://imakashi.com/blog/archives/themeRomanticism.html">Romanticism2.2</a></b> by <a class="chameleon underline" href="https://imakashi.com/"><b>Akashi</b></a>
+         <!-- owo 指向仓库吧 对不起了！ -->
+      <small style="opacity: .2;">Theme <b><a class="chameleon underline"href="https://github.com/watercatlxh/RomanticismLite">RomanticismLite</a></b> by <a class="chameleon underline" href="https://github.com/watercatlxh/"><b>watercatlxh</b></a>
       <br>
       Powered by <a class="chameleon underline" href="https://typecho.org"><b>Typecho</b></a></small>
       <br><br>

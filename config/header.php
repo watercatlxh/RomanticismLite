@@ -74,9 +74,11 @@ error_reporting(0);
   </script>
 
 <div class="mdui-appbar blur mdui-appbar-fixed mdui-shadow-0">
+    <?php if (!empty($this->options->AKAROMfucset) && in_array('AKAROMindexloading', $this->options->AKAROMfucset)): ?>
     <div class="mdui-progress" id="loading-progress" style="height: 3px; border-radius: 0;">
         <div class="mdui-progress-indeterminate"></div>
     </div>
+    <?php endif; ?>
     <div class="mdui-toolbar">
       <a class="mdui-hidden-xs-down"></a>
       <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#mainsidebar', overlay: true}"><i class="mdui-icon material-icons">menu</i></button>

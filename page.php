@@ -9,7 +9,7 @@
                                        
  * Page
  * 独立页面内容输出
- * @author 明石
+ * @author 明石 & Github@watercatlxh
  * @version 2.2
  * @link https://imakashi.eu.org/
  */

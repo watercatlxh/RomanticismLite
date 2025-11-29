@@ -10,7 +10,7 @@
  * 文章归档页
  *
  * @package custom
- * @author 明石
+ * @author 明石 & Github@watercatlxh
  * @version 2.1 - 250204
  * @link https://imakashi.eu.org/
  */

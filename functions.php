@@ -119,8 +119,7 @@ function themeConfig($form) {  //后台设置界面
     $AKAROMindeximg = new Typecho_Widget_Helper_Form_Element_Text('AKAROMindeximg', NULL, NULL, _t('设置首页主题图'), _t('在这里填入一个图片 url 地址。'));
     $form->addInput($AKAROMindeximg);
 
-    $AKAROMsidebarimg = new Typecho_Widget_Helper_Form_Element_Text('AKAROMsidebarimg', NULL, NULL, _t('设置侧边栏顶图'), _t('在这里填入一个图片 url 地址，将会显示在侧边栏上部。'));
-    $form->addInput($AKAROMsidebarimg);
+
 
     $AKAROMsign = new Typecho_Widget_Helper_Form_Element_Text('AKAROMsign', NULL, NULL, _t('设置网站图标'), _t('在这里填入一个图片 url 地址，将会显示在浏览器标签栏。'));
     $form->addInput($AKAROMsign);

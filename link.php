@@ -10,7 +10,7 @@
  * 友情链接页
  *
  * @package custom
- * @author 明石
+ * @author 明石 & Github@watercatlxh
  * @version 2.1
  * @link https://imakashi.eu.org/
  */
